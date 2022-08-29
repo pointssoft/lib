@@ -1,0 +1,257 @@
+@media only screen and (max-width: 767px) {
+    /* bannar section starts */
+    .bannar-image {
+        margin-top: 20px;
+        opacity: 1 !important;
+        margin-left: 17% !important;
+        width: 65%;
+    }
+    .bannar-content{
+        font-size: 15px;
+    }
+    .bannar-image{
+        margin-left: 0;
+    }
+    .best_bannar{
+        top: 77%;
+        width: 31%;
+        right: 3.7%;
+    }
+    .bannar_tag{
+        width: 14%;
+        right: 10.8%;
+    }
+    .aword_image{
+        width: 30%;
+        left: -28%;
+    }
+    /* bannar section ends */
+    /* us section starts */
+    .icon-ous {
+        padding: 60px 39px;
+    }
+    .ous-header,.service-header, .project-header-manegment{
+        margin-left: 0px;
+        margin-top: 50px;
+        font-size: 48px;
+        text-align: center;
+        float: none;
+        position: relative;
+    }
+    .ous-header::before, .project-header-manegment::before, .service-header::before{
+        content: '';
+        right: 40%;
+        bottom: 0%;
+        background: #1CBD9D;
+        height: 3px;
+        width: 96px;
+        position: absolute;
+    }
+    /* us section ends */
+    /* service section starts */
+    .service-section-bottom {
+        margin-left: 0px;
+    }
+    .services-image {
+        width: 50%;
+        height: auto;
+    }
+    .icon-service {
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    .service-content-icon {
+        margin-bottom: 50px;
+    }
+    /* service section ends */
+    /* project-section starts */
+    
+    .project-header-manegment::before{
+        bottom: -15%;
+    }
+    
+    .project-card{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    /* product-section starts */
+    .product-card{
+        border-radius: 15px;
+        margin-bottom: 8%;
+        margin-left: 2%;
+        margin-right: 6%;
+        cursor: pointer;
+    }
+    .product-section-header{
+        margin-left: 1px;
+    }
+    /* contact section starts */
+    .contact-bg{
+        background: #1CBD9D;
+        height: 655px;
+    }
+    .contuct-image{
+        margin-top: 0px;
+        width: 55%;
+    }
+    .playbutton {
+        right: 19.5%;
+        top: 70%;
+        width: 11%;
+    }
+    .playbuttonOne {
+        right: 15.9%;
+        top: 65.8%;
+        width: 18%;
+    }
+    .playbuttonTwo {
+        right: 13.2%;
+        top: 63.6%;
+        width: 23%;
+    }
+    .playbuttonThree {
+        right: 10.8%;
+        top: 60.5%;
+        width: 28%;
+    }
+    /* our project style starts */
+    .sideber-scroll{
+        display: none;
+    }
+    /* our project style ends */
+    /* customer-speech-section starts */
+    .complit-projects{
+        width: 33.33%;
+        text-align: center;
+        margin: 3% 0;
+    }
+    .complit-project-card{
+        margin: 0 -15px;
+    }
+    .complit-project-card h2{
+        font-size: 35px;
+    }
+    .complit-project-card p{
+        font-size: 15px;
+    }
+    .full-name{
+        width: 100%;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        font-size: 18px;
+        outline: none;
+        background: #FFFFFF33;
+        border: none;
+        margin-bottom: 25px;
+        margin-left: 0px;
+    }
+    .full-name1{
+        width: 100%;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        font-size: 18px;
+        outline: none;
+        background: #FFFFFF33;
+        border: none;
+        margin-bottom: 25px;
+        margin-left: 0;
+    }
+    .form-button{
+        padding: 0 4px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 750px){
+    .contact-bg{
+    background: #1CBD9D;
+    height: 655px;
+}
+.contuct-image{
+    margin-top: 0px;
+    width: 55%;
+}
+    .playbutton {
+        right: 19.5%;
+        top: 70%;
+        width: 11%;
+    }
+    .playbuttonOne {
+        right: 15.9%;
+        top: 66.6%;
+        width: 18%;
+    }
+    .playbuttonTwo {
+        right: 13.2%;
+        top: 64.6%;
+        width: 23%;
+    }
+    .playbuttonThree {
+        right: 10.8%;
+        top: 62.5%;
+        width: 28%;
+    }
+}
+@media (min-width: 500px) and (max-width: 600px){
+    .contact-bg{
+        background: #1CBD9D;
+        height: 655px;
+    }
+    .contuct-image{
+        margin-top: 0px;
+        width: 55%;
+    }
+    .playbutton {
+        right: 19.5%;
+        top: 70%;
+        width: 11%;
+    }
+    .playbuttonOne {
+        right: 15.9%;
+        top: 66.6%;
+        width: 18%;
+    }
+    .playbuttonTwo {
+        right: 13.2%;
+        top: 64.6%;
+        width: 23%;
+    }
+    .playbuttonThree {
+        right: 10.8%;
+        top: 62.5%;
+        width: 28%;
+    }
+    .icon-service {
+        padding: 94px 40px; 
+    }
+}
+@media only screen and (max-width: 500px){
+    .contact-bg{
+        background: #1CBD9D;
+        height: 655px;
+    }
+    .contuct-image{
+        margin-top: 0px;
+        width: 55%;
+    }
+    .playbutton {
+        right: 19%;
+        top: 78.6%;
+        width: 12%;
+    }
+    .playbuttonOne {
+        right: 16.9%;
+        top: 76.9%;
+        width: 16%;
+    }
+    .playbuttonTwo {
+        right: 14.0%;
+        top: 74.9%;
+        width: 22%;
+    }
+    .playbuttonThree {
+        right: 11.1%;
+        top: 73%;
+        width: 28%;
+    }
+}

@@ -1,0 +1,111 @@
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width:1400px) {
+        /* bannarr section starts */
+        .bannar-header{
+            font-size: 68px;
+            font-weight: 200;
+            font-family: 'Rubik';
+        }
+        .bannar-content{
+            font-size: 18px;
+            padding: 2% 0;
+            font-family: 'Rubik';
+        }
+        .bannar-image{
+            margin-top: 20px;
+            opacity: 0;
+            width: 65%;
+            margin-left: 500px;
+            transition: all 1s ease-in-out;
+        }
+        .active{
+            opacity: 1;
+            margin-left: 130px;
+        }
+        .aword_image{
+            position: absolute;
+            top: 39%;
+            left: -24%;
+            opacity: 0;
+            transform: scale(.1);
+            transition: all 1.5s ease-in-out;
+            animation: left_right 5s infinite;
+        }
+        
+        @keyframes left_right{
+            50%{
+                transform: translateX(20px);
+            }
+        }
+        .active{
+            opacity: 1;
+            transform: scale(1);
+        }
+        .bannar_tag{
+            position: absolute;
+            top: 38%;
+            right: 0%;
+            opacity: 0;
+            transform: scale(.1);
+            transition: all 1.5s ease-in-out;
+            animation: up_down 4s infinite;
+        }
+        @keyframes up_down{
+            50%{
+                transform: translateY(20px);
+            }
+        }
+        .active{
+            opacity: 1;
+            transform: scale(1);
+        }
+        .best_bannar{
+            position: absolute;
+            top: 76%;
+            right: -2.3%;
+            opacity: 0;
+            transform: scale(.1);
+            transition: all 1.5s ease-in-out;
+            animation: left_right 3.5s infinite;
+        }
+        
+        @keyframes left_right{
+            50%{
+                transform: translateX(20px);
+            }
+        }
+        .active{
+            opacity: 1;
+            transform: scale(1);
+        }
+
+
+
+    .contact-header{
+        font-size: 50px;
+     }
+     
+    /* project-invisible starts */
+    .project-invisibleTwo{
+        display: none;
+    }
+    .project-card {
+        padding: 50px 10px;
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    /* project-invisible ends */
+    /* contact-section starts */
+    .contact-bg{
+        background: #1CBD9D;
+        width: 100%;
+        height: 395px;
+        margin-top: 120px;
+    }
+    .product-card {
+        text-align: center;
+        margin: 0 10%;
+        margin-bottom: 8%;
+    }
+}

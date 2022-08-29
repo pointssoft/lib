@@ -1,0 +1,176 @@
+@media only screen and (min-width: 991px) {
+    /* bannar section starts */
+    
+    .bannar-header{
+        font-size: 58px;
+        font-weight: 200;
+        font-family: 'Rubik';
+    }
+    .bannar-content{
+        font-size: 15px;
+        padding: 2% 0;
+        font-family: 'Rubik';
+    }
+    
+    .bannar-image{
+        margin-top: 5px;
+        width: 70%;
+        height: 70%;
+        opacity: 0;
+        margin-left: 500px;
+        transition: all 1s ease-in-out;
+    }
+    .active{
+        opacity: 1;
+        margin-left: 14%;
+    }
+    .aword_image{
+        position: absolute;
+        top: 36%;
+        width: 35%;
+        left: -38%;
+        opacity: 0;
+        transition: all 1.5s ease-in-out;
+    }
+    
+    @keyframes left_right{
+        50%{
+            transform: translateX(20px);
+        }
+    }
+    .aword_image.active {
+        opacity: 1;
+        margin-left: 130px;
+    }
+    .bannar_tag{
+        position: absolute;
+        top: 40%;
+        width: 18%;
+        right: 5.8%;
+        opacity: 0;
+        transform: scale(.1);
+        transition: all 1.5s ease-in-out;
+        animation: up_down 4s infinite;
+    }
+    @keyframes up_down{
+        50%{
+            transform: translateY(20px);
+        }
+    }
+    .bannar_tag.active{
+        opacity: 1;
+        transform: scale(1);
+    }
+    .best_bannar{
+        position: absolute;
+        top: 78%;
+        right: -3.3%;
+        width: 35%;
+        opacity: 0;
+        transform: scale(.1);
+        transition: all 1.5s ease-in-out;
+        animation: left_right 3.5s infinite;
+    }
+    
+    @keyframes left_right{
+        50%{
+            transform: translateX(20px);
+        }
+    }
+    .best_bannar.active{
+        opacity: 1;
+        transform: scale(1);
+    }
+        /* ous section starts */
+    .ous-header,.service-header{
+        
+        margin-left: 150px;
+        font-size: 48px;
+        position: relative;
+    }
+    .ous-header::before, .service-header::before{
+        content: '';
+        right: 100%;
+        bottom: 50%;
+        background: #1CBD9D;
+        height: 3px;
+        width: 150px;
+        position: absolute;
+    }
+    /* project-invisible starts */
+    .project-invisibleTwo{
+        display: none;
+    }
+    .project-card {
+        padding: 36px 10px;
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    /* project-invisible ends */
+    /* contact-section starts */
+    .contact-bg{
+        background: #1CBD9D;
+        width: 100%;
+        height: 315px;
+        margin-top: 120px;
+    }
+    .contact-header{
+        color: #fff;
+        font-size: 35px;
+    }
+    .contact-list{
+        color: #fff;
+        font-size: 15px;
+        padding: 10px 0;
+        padding-left: 20px;
+    }
+    .contact-header{
+        font-size: 30px;
+    }
+    .contuct-image{
+        width: 100%;
+        margin-left: 20px;
+        margin-top: -96px;
+    }
+    /* product-card section starts */
+    .product-card {
+        text-align: center;
+        margin: 0 0%;
+        margin-bottom: 8%;
+    }
+    /* product-card section ends */
+
+   
+    /* footer section starts */
+    
+        footer i{
+            color: #1CBD9D;
+        }
+        .Address-icon{
+            padding: 5px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            margin-left: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .Address-icon:hover{
+            background: #1CBD9D;
+            border: 2px solid #1CBD9D;
+            border-radius: 50%;
+            color: #fff;
+        }
+        .form-button{
+            padding: 0 8px;
+        }
+
+        .playbutton {
+            position: absolute;
+            right: 9.5%;
+            top: 33%;
+            width: 9%;
+            background-color: red;
+            border-radius: 65%;
+            padding: 3px;
+        }
+}

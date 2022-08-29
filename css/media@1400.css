@@ -1,0 +1,79 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1400px) {
+
+    /* .aword_image{
+        position: absolute;
+        top: 36%;
+        left: -21%;
+        opacity: 0;
+        transform: scale(.1);
+        transition: all 1.5s ease-in-out;
+        animation: left_right 5s infinite;
+    }
+    
+    @keyframes left_right{
+        50%{
+            transform: translateX(20px);
+        }
+    }
+    .active{
+        opacity: 1;
+        transform: scale(1);
+    }
+    .bannar_tag{
+        position: absolute;
+        top: 40%;
+        right: 2.8%;
+        opacity: 0;
+        transform: scale(.1);
+        transition: all 1.5s ease-in-out;
+        animation: up_down 4s infinite;
+    }
+    @keyframes up_down{
+        50%{
+            transform: translateY(20px);
+        }
+    }
+    .active{
+        opacity: 1;
+        transform: scale(1);
+    }
+    .best_bannar{
+        position: absolute;
+        top: 70%;
+        right: -9.3%;
+        opacity: 0;
+        transform: scale(.1);
+        transition: all 1.5s ease-in-out;
+        animation: left_right 3.5s infinite;
+    }
+    
+    @keyframes left_right{
+        50%{
+            transform: translateX(20px);
+        }
+    }
+    .active{
+        opacity: 1;
+        transform: scale(1);
+    } */
+
+
+    /* project-invisible starts */
+    .project-invisibleTwo{
+        display: none;
+    }
+    /* project-invisible ends */
+    .contact-header{
+        margin-top: 12%;
+        font-size: 50px;
+     }
+     
+    /* contact-section starts */
+    .contact-bg{
+        background: #1CBD9D;
+        width: 100%;
+        height: 480px;
+        margin-top: 120px;
+    }
+}
