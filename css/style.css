@@ -487,7 +487,82 @@ font-size: 48px;
 .project-card-content{
     font-family: 'Rubik';
 }
+/*---process section start---*/
+.process-area .process-card:hover{
+    background-color:#1CBD9D ;
+    color:#fff;
+    transition:0.5s;
+}
+.process-area .process-card i{
+    font-size: 25px;
+    margin-bottom:20px;
+}
+.process-area .process-card h5{
+    font-size:18px;
+    
+}
+.process-area .number{
+    
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    vertical-align: center;
+    line-height: 55px;
+    margin: auto;
+    margin-top: -24px;
+}
+.numberOne,
+.process-area .cardOne
+{
+    background-color: #17B293;
+}
+.numberTwo
 
+{
+    background-color: #02A7ED;
+}
+.numberThree
+
+{
+    background-color: #FCA92B;
+}
+.numberFour{
+    background-color: #000;
+}
+.numberFive{
+    background-color: #E6849E;
+}
+.packageCard{
+    padding: 20px;
+    color:#fff;
+    margin-bottom: 19px;
+    font-size: 33px;
+}
+#box,#box2,#box3,#box4,#box5{
+    opacity: 0;
+    margin-left: -500px;
+    transition: 1s;
+    }
+#box.animated,#box2.animated,#box3.animated,#box4.animated,#box5.animated{
+    opacity: 1;
+    margin-left: 0px;
+     
+  }
+.process-area .cardTwo{
+   background-color: #5DD9C0;
+   
+}
+.process-area .cardThree{
+    background-color:#2D2E34 ;
+}
+.picup-bottom-border img{
+    width:80%;
+}
+
+
+/*---process section end---*/
 /* customer-speech-section starts */
 .updet-states{
     width: 74%;
