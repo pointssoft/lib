@@ -741,3 +741,32 @@ footer i{
     border-radius: 50%;
     color: #fff;
 }
+form.wpcf7-form.init {
+      padding: 34px;
+    }
+    .wpcf7-textarea {
+    width: 91%;
+    background: #5dd9c0;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    
+}
+input.wpcf7-form-control.wpcf7-submit {
+    width: 91%;
+}
+input#name,input#email{
+    margin-right: 22px;
+    height: 38px;
+    background: #5dd9c0;
+    border: navajowhite;
+}
+.wpcf7-form label{
+  color:#fff;
+}
+input.wpcf7-form-control.wpcf7-submit {
+    width: 91%;
+    height: 39px;
+    border-color: #ffc720;
+}
