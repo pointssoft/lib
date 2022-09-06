@@ -1,65 +1,65 @@
-window.addEventListener('scroll', ()=>{
-    let content = document.querySelector('.bannar-left' );
-    let contentPosition = content.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight /2;
-    if(contentPosition < screenPosition){
-        content.classList.add('bannar_left_active');
-    }else{
-        content.classList.remove('bannar_left_active')
-    }
-});
-window.addEventListener('scroll', ()=>{
-    let content = document.querySelector('.bannar-image' );
-    let contentPosition = content.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight /2;
-    if(contentPosition < screenPosition){
-        content.classList.add('active');
-    }else{
-        content.classList.remove('active')
-    }
-});
-window.addEventListener('scroll', ()=>{
-    let content = document.querySelector('.aword_image' );
-    let contentPosition = content.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight /1;
-    if(contentPosition < screenPosition){
-        content.classList.add('active');
-    }else{
-        content.classList.remove('active')
-    }
-});
-window.addEventListener('scroll', ()=>{
-    let content = document.querySelector('.best_bannar' );
-    let contentPosition = content.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight /1;
-    if(contentPosition < screenPosition){
-        content.classList.add('active');
-    }
-});
-window.addEventListener('scroll', ()=>{
-    let content = document.querySelector('.bannar_tag' );
-    let contentPosition = content.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight /1;
-    if(contentPosition < screenPosition){
-        content.classList.add('active');
-    }
-});
-window.addEventListener('scroll', ()=>{
-    let content = document.querySelector('.bannar_wellcome' );
-    let contentPosition = content.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight /1;
-    if(contentPosition < screenPosition){
-        content.classList.add('display');
-    }
-});
-window.addEventListener('scroll', ()=>{
-    let content = document.querySelector('.image_section' );
-    let contentPosition = content.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight /1;
-    if(contentPosition < screenPosition){
-        content.classList.add('image_section_active');
-    }
-});
+// window.addEventListener('scroll', ()=>{
+//     let content = document.querySelector('.bannar-left' );
+//     let contentPosition = content.getBoundingClientRect().top;
+//     let screenPosition = window.innerHeight /2;
+//     if(contentPosition < screenPosition){
+//         content.classList.add('bannar_left_active');
+//     }else{
+//         content.classList.remove('bannar_left_active')
+//     }
+// });
+// window.addEventListener('scroll', ()=>{
+//     let content = document.querySelector('.bannar-image' );
+//     let contentPosition = content.getBoundingClientRect().top;
+//     let screenPosition = window.innerHeight /2;
+//     if(contentPosition < screenPosition){
+//         content.classList.add('active');
+//     }else{
+//         content.classList.remove('active')
+//     }
+// });
+// window.addEventListener('scroll', ()=>{
+//     let content = document.querySelector('.aword_image' );
+//     let contentPosition = content.getBoundingClientRect().top;
+//     let screenPosition = window.innerHeight /1;
+//     if(contentPosition < screenPosition){
+//         content.classList.add('active');
+//     }else{
+//         content.classList.remove('active')
+//     }
+// });
+// window.addEventListener('scroll', ()=>{
+//     let content = document.querySelector('.best_bannar' );
+//     let contentPosition = content.getBoundingClientRect().top;
+//     let screenPosition = window.innerHeight /1;
+//     if(contentPosition < screenPosition){
+//         content.classList.add('active');
+//     }
+// });
+// window.addEventListener('scroll', ()=>{
+//     let content = document.querySelector('.bannar_tag' );
+//     let contentPosition = content.getBoundingClientRect().top;
+//     let screenPosition = window.innerHeight /1;
+//     if(contentPosition < screenPosition){
+//         content.classList.add('active');
+//     }
+// });
+// window.addEventListener('scroll', ()=>{
+//     let content = document.querySelector('.bannar_wellcome' );
+//     let contentPosition = content.getBoundingClientRect().top;
+//     let screenPosition = window.innerHeight /1;
+//     if(contentPosition < screenPosition){
+//         content.classList.add('display');
+//     }
+// });
+// window.addEventListener('scroll', ()=>{
+//     let content = document.querySelector('.image_section' );
+//     let contentPosition = content.getBoundingClientRect().top;
+//     let screenPosition = window.innerHeight /1;
+//     if(contentPosition < screenPosition){
+//         content.classList.add('image_section_active');
+//     }
+// });
 
 $(document).ready(function() {
     $("#playbutton").click(function(){
