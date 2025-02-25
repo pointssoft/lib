@@ -40,15 +40,16 @@
 /* ======================== Functions Css End ======================= */
 /* Font Family*/
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap");
+
 /* ========================= Variable Css Start ======================== */
 :root {
-  /* Font Family Variable */
+    /* Font Family Variable */
     --heading-font: "Quicksand", sans-serif;
     --heading-font-two: "Exo", sans-serif;
     --heading-font-three: "Outfit", sans-serif;
     --heading-font-four: "Dancing Script", cursive;
     --body-font: "Inter", sans-serif;
-  /* Font Size Variable Start */
+    /* Font Size Variable Start */
     --heading-one: clamp(2.25rem, -0.0733rem + 6.3692vw, 4.5rem);
     --heading-two: clamp(2rem, 0.7133rem + 2.8846vw, 3.5rem);
     --heading-three: clamp(1.75rem, 0.3353rem + 2.1661vw, 3rem);
@@ -57,18 +58,18 @@
     --heading-six: clamp(1.125rem, 0.769rem + 0.6813vw, 1.5rem);
     --display-200: clamp(3.75rem, -0.0733rem + 6.3692vw, 12.5rem);
     --display-one: clamp(2.5rem, -0.0733rem + 6.3692vw, 7.5rem);
-  /* Font Size End */
-  /* template main color */
+    /* Font Size End */
+    /* template main color */
     --main-h: 148;
     --main-s: 59%;
     --main-l: 39%;
     --main: var(--main-h) var(--main-s) var(--main-l);
-  /* template main color */
+    /* template main color */
     --main-two-h: 25;
     --main-two-s: 100%;
     --main-two-l: 49%;
     --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
-  /* White Color */
+    /* White Color */
     --white: 0 0% 100%;
     --black: 235 49% 14%;
     --light: 0 0% 51%;
@@ -308,7 +309,8 @@
     color: hsl(var(--main));
 }
 
-.common-accordion .accordion-button[aria-expanded=true]::after, .common-accordion .accordion-button[aria-expanded=false]::after {
+.common-accordion .accordion-button[aria-expanded=true]::after,
+.common-accordion .accordion-button[aria-expanded=false]::after {
     font-family: "Phosphor";
     font-weight: 900;
     content: "\e136";
@@ -323,7 +325,9 @@
 }
 
 @media screen and (max-width: 575px) {
-    .common-accordion .accordion-button[aria-expanded=true]::after, .common-accordion .accordion-button[aria-expanded=false]::after {
+
+    .common-accordion .accordion-button[aria-expanded=true]::after,
+    .common-accordion .accordion-button[aria-expanded=false]::after {
         inset-inline-end: 20px;
     }
 }
@@ -335,7 +339,11 @@
 
 /* ================================= Accordion Css End =========================== */
 /* ================================= Button Css Start =========================== */
-.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
     color: none;
     background-color: none;
     border-color: none;
@@ -353,7 +361,9 @@
     padding: 13px 24px;
 }
 
-.btn:hover, .btn:focus, .btn:focus-visible {
+.btn:hover,
+.btn:focus,
+.btn:focus-visible {
     box-shadow: none !important;
 }
 
@@ -524,7 +534,8 @@
     opacity: 0;
 }
 
-.common-input:disabled, .common-input[readonly] {
+.common-input:disabled,
+.common-input[readonly] {
     background-color: hsl(var(--black)/0.2);
     opacity: 1;
     border: 0;
@@ -585,7 +596,7 @@
     inset-inline-end: auto;
 }
 
-textarea + .input-icon {
+textarea+.input-icon {
     inset-block-start: 15px;
     transform: translateY(0);
 }
@@ -682,14 +693,26 @@ textarea.common-input {
         height: 110px;
     }
 }
+
 /* Autofill Css */
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active,
-textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, textarea:-webkit-autofill:active {
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active {
     -webkit-transition: background-color 5000s ease-in-out 0s;
     transition: background-color 5000s ease-in-out 0s;
 }
 
-input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill, textarea:-webkit-autofill, textarea:-webkit-autofill {
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px transparent inset;
     -webkit-text-fill-color: hsl(var(--heading-color)) !important;
     caret-color: hsl(var(--heading-color));
@@ -697,7 +720,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill, text
 
 /* Autofill Css End */
 /* Show Hide Password */
-input#your-password, input#confirm-password {
+input#your-password,
+input#confirm-password {
     padding-inline-end: 50px;
 }
 
@@ -951,7 +975,9 @@ input[type=number] {
     box-shadow: none !important;
 }
 
-.pagination .page-item .page-link:hover, .pagination .page-item .page-link:active, .pagination .page-item .page-link:focus {
+.pagination .page-item .page-link:hover,
+.pagination .page-item .page-link:active,
+.pagination .page-item .page-link:focus {
     color: var(--main-600) !important;
     background-color: var(--main-100) !important;
     border-color: var(--main-300) !important;
@@ -1027,7 +1053,7 @@ input[type=number] {
     min-width: max-content;
 }
 
-.table > :not(caption) > * > * {
+.table> :not(caption)>*>* {
     border-bottom: 0;
 }
 
@@ -1044,16 +1070,19 @@ input[type=number] {
     padding-inline-end: 0;
 }
 
-.table tr th, .table tr td {
+.table tr th,
+.table tr td {
     text-align: center;
     vertical-align: middle;
 }
 
-.table tr th:first-child, .table tr td:first-child {
+.table tr th:first-child,
+.table tr td:first-child {
     text-align: left;
 }
 
-.table tr th:last-child, .table tr td:last-child {
+.table tr th:last-child,
+.table tr td:last-child {
     text-align: right;
     padding-inline-end: 0;
 }
@@ -1091,7 +1120,8 @@ input[type=number] {
     color: hsl(var(--heading-color));
 }
 
-.table.style-two thead tr, .table.style-two tbody tr {
+.table.style-two thead tr,
+.table.style-two tbody tr {
     border-bottom: 1px solid hsl(var(--black)/0.1);
 }
 
@@ -1126,14 +1156,17 @@ input[type=number] {
     border: 0;
 }
 
-.common-card .card-header, .common-card .card-footer {
+.common-card .card-header,
+.common-card .card-footer {
     padding: 12px 24px;
     background-color: transparent;
     border-bottom: 1px solid var(--border-color);
 }
 
 @media screen and (max-width: 424px) {
-    .common-card .card-header, .common-card .card-footer {
+
+    .common-card .card-header,
+    .common-card .card-footer {
         padding: 12px 16px;
     }
 }
@@ -1311,29 +1344,30 @@ input[type=number] {
     color: var(--main-600) !important;
 }
 
-.select2-container--default .select2-results__option--selected, .select2-container--default .select2-results__option--selected:hover {
+.select2-container--default .select2-results__option--selected,
+.select2-container--default .select2-results__option--selected:hover {
     background-color: var(--main-600) !important;
     color: #fff !important;
 }
 
-.select2-container--default .select2-results > .select2-results__options {
+.select2-container--default .select2-results>.select2-results__options {
     padding-inline-end: 8px;
 }
 
-.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar {
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar {
     width: 6px;
 }
 
-.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-track {
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-track {
     background: #e4e4e4;
 }
 
-.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb {
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-thumb {
     background: #a2a2a2;
     border-radius: 50px;
 }
 
-.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb:hover {
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-thumb:hover {
     background: #6d6d6d;
 }
 
@@ -1380,14 +1414,18 @@ input[type=number] {
 }
 
 @media screen and (max-width: 991px) {
-    .location-box, .search-category.h-48 {
+
+    .location-box,
+    .search-category.h-48 {
         height: 40px !important;
     }
 
-    .location-box .select2-selection__rendered, .search-category.h-48 .select2-selection__rendered {
+    .location-box .select2-selection__rendered,
+    .search-category.h-48 .select2-selection__rendered {
         font-size: 12px;
     }
 }
+
 /* ======================= Select 2 Css End =========================== */
 /* ========================== Count Down Css Start =============================== */
 .countdown-list {
@@ -1500,7 +1538,9 @@ input[type=number] {
 }
 
 @keyframes notification {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
 
@@ -1508,6 +1548,7 @@ input[type=number] {
         opacity: 0.3;
     }
 }
+
 /* ================================= Range Slider Css Start =========================== */
 .custom--range #slider-range {
     height: 4px;
@@ -1528,7 +1569,8 @@ input[type=number] {
     transition: 0.2s linear;
 }
 
-.custom--range #slider-range .ui-slider-handle:hover, .custom--range #slider-range .ui-slider-handle.ui-state-active {
+.custom--range #slider-range .ui-slider-handle:hover,
+.custom--range #slider-range .ui-slider-handle.ui-state-active {
     transform: translateY(-50%) scale(1.3);
 }
 
@@ -1579,7 +1621,8 @@ body {
     position: relative;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -1606,36 +1649,42 @@ h6 {
     font-weight: 700;
 }
 
-h1, .h1 {
+h1,
+.h1 {
     font-size: var(--heading-one);
 }
 
-h2, .h2 {
+h2,
+.h2 {
     font-size: var(--heading-two);
 }
 
-h3, .h3 {
+h3,
+.h3 {
     font-size: var(--heading-three);
 }
 
-h4, .h4 {
+h4,
+.h4 {
     font-size: var(--heading-four);
 }
 
-h5, .h5 {
+h5,
+.h5 {
     font-size: var(--heading-five);
 }
 
-h6, .h6 {
+h6,
+.h6 {
     font-size: var(--heading-six);
 }
 
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a {
+h1>a,
+h2>a,
+h3>a,
+h4>a,
+h5>a,
+h6>a {
     font-weight: inherit;
     font-size: inherit;
     color: inherit;
@@ -1643,12 +1692,12 @@ h6 > a {
     line-height: inherit;
 }
 
-h1 > a:hover,
-h2 > a:hover,
-h3 > a:hover,
-h4 > a:hover,
-h5 > a:hover,
-h6 > a:hover {
+h1>a:hover,
+h2>a:hover,
+h3>a:hover,
+h4>a:hover,
+h5>a:hover,
+h6>a:hover {
     color: hsl(var(--main));
 }
 
@@ -2937,6 +2986,7 @@ input:focus-visible {
         margin-block-end: 60px !important;
     }
 }
+
 /* ================================= Margin Css End =========================== */
 /* ================================= Padding Css Start =========================== */
 .p-2 {
@@ -4191,6 +4241,7 @@ input:focus-visible {
         padding-block-end: 60px !important;
     }
 }
+
 /* ================================= Padding Css End =========================== */
 /* ================================= Classes Css Start =========================== */
 /* Section Background */
@@ -4406,7 +4457,8 @@ input:focus-visible {
 }
 
 /* Display Flex Css Start */
-.flex-align, .common-check {
+.flex-align,
+.common-check {
     display: flex;
     align-items: center;
 }
@@ -7481,7 +7533,9 @@ input:focus-visible {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 
-.box-shadow-lg, .submenus-submenu, .common-dropdown {
+.box-shadow-lg,
+.submenus-submenu,
+.common-dropdown {
     box-shadow: 0px 7px 21px -5px rgba(0, 0, 0, 0.1), 0 4px 21px -4px rgba(0, 0, 0, 0.1);
 }
 
@@ -7688,6 +7742,7 @@ input:focus-visible {
         width: calc(100% - 0px);
     }
 }
+
 /* Hide Scroll bar Css For Custom Modal End */
 /* Overlay Start */
 .overlay {
@@ -7729,6 +7784,7 @@ input:focus-visible {
         opacity: 1;
     }
 }
+
 /* Overlay End */
 .text-line-1 {
     display: -webkit-box;
@@ -7957,25 +8013,30 @@ input:focus-visible {
 }
 
 @media (min-width: 992px) {
-    .on-hover-item:hover > a::before {
+    .on-hover-item:hover>a::before {
         color: hsl(var(--main));
         transform: translateY(-50%) rotate(180deg);
     }
 }
+
 /* Hover Classes End */
-.g-8, .gy-8 {
+.g-8,
+.gy-8 {
     --bs-gutter-y: .5rem !important;
 }
 
-.g-12, .gy-12 {
+.g-12,
+.gy-12 {
     --bs-gutter-y: .75rem !important;
 }
 
-.g-8, .gx-8 {
+.g-8,
+.gx-8 {
     --bs-gutter-x: .5rem !important;
 }
 
-.g-12, .gx-12 {
+.g-12,
+.gx-12 {
     --bs-gutter-x: .75rem !important;
 }
 
@@ -8014,41 +8075,41 @@ input:focus-visible {
     }
 }
 
-.header-top__right.style-two > li {
+.header-top__right.style-two>li {
     padding-inline-end: 16px !important;
     margin-inline-end: 0 !important;
 }
 
-.header-top__right.style-two > li:last-child {
+.header-top__right.style-two>li:last-child {
     padding-inline-end: 0 !important;
 }
 
-.header-top__right.style-two > li::before {
+.header-top__right.style-two>li::before {
     display: none !important;
 }
 
-.header-top__right.style-two > li a {
+.header-top__right.style-two>li a {
     padding-inline-end: 20px;
 }
 
 @media screen and (max-width: 991px) {
-    .header-top__right.style-two > li a {
+    .header-top__right.style-two>li a {
         color: #fff !important;
     }
 }
 
-.header-top__right.style-two > li a::before {
+.header-top__right.style-two>li a::before {
     color: var(--heading-color) !important;
     font-size: 14px !important;
 }
 
-.header-top__right.style-two > li > ul {
+.header-top__right.style-two>li>ul {
     inset-inline-end: auto !important;
     inset-inline-start: calc(-100% - 24px) !important;
 }
 
 @media screen and (max-width: 991px) {
-    .header-top__right.style-two > li > ul li a {
+    .header-top__right.style-two>li>ul li a {
         color: var(--neutral-600) !important;
     }
 }
@@ -8099,11 +8160,11 @@ input:focus-visible {
 }
 
 /* Has Dropdown Css */
-.arrow-white > a {
+.arrow-white>a {
     padding-inline-end: 12px;
 }
 
-.arrow-white > a::before {
+.arrow-white>a::before {
     color: hsl(var(--white)) !important;
     font-size: 8px;
 }
@@ -8151,6 +8212,7 @@ input:focus-visible {
         max-width: 148px;
     }
 }
+
 /* Header Menu and Submenu Css Start */
 .nav-menu {
     gap: 32px;
@@ -8168,20 +8230,20 @@ input:focus-visible {
     }
 }
 
-.nav-menu__item.activePage > a {
+.nav-menu__item.activePage>a {
     color: hsl(var(--main));
 }
 
-.nav-menu__item.activePage > a::before {
+.nav-menu__item.activePage>a::before {
     color: hsl(var(--main));
 }
 
-.nav-menu__item:hover > a {
+.nav-menu__item:hover>a {
     color: var(--gray-400);
 }
 
 @media (min-width: 992px) {
-    .nav-menu__item:hover > a {
+    .nav-menu__item:hover>a {
         color: hsl(var(--main));
     }
 }
@@ -8226,19 +8288,20 @@ input:focus-visible {
     padding-inline-end: 16px;
 }
 
-.has-submenu.active > a, .has-submenu.active > a::before {
+.has-submenu.active>a,
+.has-submenu.active>a::before {
     color: hsl(var(--main));
 }
 
-.has-submenu.active > a::before {
+.has-submenu.active>a::before {
     transform: translateY(-50%) rotate(180deg) !important;
 }
 
-.has-submenu > a {
+.has-submenu>a {
     position: relative;
 }
 
-.has-submenu > a::before {
+.has-submenu>a::before {
     position: absolute;
     content: "\e136";
     inset-inline-end: 0;
@@ -8368,7 +8431,7 @@ input:focus-visible {
 }
 
 @media (min-width: 991px) {
-    .has-submenus-submenu:hover > a {
+    .has-submenus-submenu:hover>a {
         background-color: var(--gray-50);
         color: var(--gray-900) !important;
         font-weight: 600;
@@ -8403,6 +8466,7 @@ input:focus-visible {
         content: "\e13c";
     }
 }
+
 /* Style Two */
 .category-two {
     position: relative;
@@ -8451,6 +8515,7 @@ input:focus-visible {
         z-index: 1;
     }
 }
+
 /* Category Submenus Submenu Css End */
 .header-border-0 .header {
     border-bottom: 0 !important;
@@ -8538,6 +8603,7 @@ input:focus-visible {
         width: 200px;
     }
 }
+
 /* Header Activities Css Start */
 @media screen and (max-width: 1399px) {
     .header-two-activities {
@@ -8558,11 +8624,12 @@ input:focus-visible {
 }
 
 @media screen and (max-width: 991px) {
-    .header-two-activities .item-hover-two > span {
+    .header-two-activities .item-hover-two>span {
         font-size: 18px !important;
         color: var(--neutral-600) !important;
     }
 }
+
 /* Header Activities Css End */
 /* Header Activities Css start */
 .search-category.style-two {
@@ -8604,13 +8671,13 @@ input:focus-visible {
         max-height: 100% !important;
     }
 
-    .responsive-dropdown ul li.active > a {
+    .responsive-dropdown ul li.active>a {
         background: var(--gray-50);
         color: var(--gray-800) !important;
         font-weight: 600;
     }
 
-    .responsive-dropdown ul li.active > a .icon {
+    .responsive-dropdown ul li.active>a .icon {
         transform: rotate(90deg);
     }
 
@@ -8648,6 +8715,7 @@ input:focus-visible {
         inset-inline-start: 0;
     }
 }
+
 /* Category Dropdown Responsive Css End */
 /* =========================== header Middle Css End =============================== */
 /* Mobile Menu Sidebar Start */
@@ -8692,7 +8760,7 @@ input:focus-visible {
     margin-block-start: 16px;
 }
 
-.nav-menu--mobile .nav-menu__item > a::before {
+.nav-menu--mobile .nav-menu__item>a::before {
     transform: translateY(-50%) rotate(0deg);
 }
 
@@ -8879,11 +8947,11 @@ input:focus-visible {
     margin: 0 10px;
 }
 
-.slick-initialized.slick-slider .slick-slide > div {
+.slick-initialized.slick-slider .slick-slide>div {
     height: 100%;
 }
 
-.slick-initialized.slick-slider .slick-slide > div > div {
+.slick-initialized.slick-slider .slick-slide>div>div {
     height: 100%;
 }
 
@@ -8910,6 +8978,7 @@ input:focus-visible {
         height: 32px;
     }
 }
+
 /* Arrow Style Two */
 .arrow-center {
     position: relative;
@@ -8999,6 +9068,7 @@ input:focus-visible {
         margin-bottom: 60px !important;
     }
 }
+
 /* ================== Section Heading Css End ========================= */
 /* ============================== Banner Css Start ========================== */
 .banner {
@@ -9150,6 +9220,7 @@ input:focus-visible {
         transform: translateY(10px);
     }
 }
+
 /* ============================== Banner Css End ========================== */
 /* ============================ Feature Section Css start =============================== */
 .feature {
@@ -9249,7 +9320,8 @@ input:focus-visible {
     transform: scale(1.2);
 }
 
-.featured-products .product-card, .popular-products .product-card {
+.featured-products .product-card,
+.popular-products .product-card {
     flex-direction: row;
     align-items: unset;
 }
@@ -9279,6 +9351,7 @@ input:focus-visible {
         font-size: 1.5rem !important;
     }
 }
+
 /* ======================== promotional banner Css End ============================== */
 /* ========================= flash sales Start ================================ */
 .flash-sales-item {
@@ -9363,6 +9436,7 @@ input:focus-visible {
         font-size: 0.625rem !important;
     }
 }
+
 /* ============================= Product Card Css End ========================== */
 /* ======================= Offer Css Start =========================== */
 @media screen and (max-width: 1499px) {
@@ -9377,6 +9451,7 @@ input:focus-visible {
         max-width: 163px;
     }
 }
+
 /* ======================= Offer Css End =========================== */
 /* ===================================== Vendor Css Start ================================== */
 .vendor-card {
@@ -9461,7 +9536,8 @@ input:focus-visible {
 }
 
 /* ================================== short product Css Start ================================== */
-.underlined-line::before, .underlined-line::after {
+.underlined-line::before,
+.underlined-line::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -9502,6 +9578,7 @@ input:focus-visible {
         max-width: 86px !important;
     }
 }
+
 /* ========================= Brand Css End ======================== */
 /* Shipping Css Start */
 .shipping-item {
@@ -9520,6 +9597,7 @@ input:focus-visible {
         width: 100% !important;
     }
 }
+
 /* ======================= Newsletter Css End =========================== */
 /* Home Two Css Start */
 .color-two:root {
@@ -9537,7 +9615,18 @@ input:focus-visible {
     font-family: var(--heading-font-two);
 }
 
-.font-exo h1, .font-exo .h1, .font-exo h2, .font-exo .h2, .font-exo h3, .font-exo .h3, .font-exo h4, .font-exo .h4, .font-exo h5, .font-exo .h5, .font-exo h6, .font-exo .h6 {
+.font-exo h1,
+.font-exo .h1,
+.font-exo h2,
+.font-exo .h2,
+.font-exo h3,
+.font-exo .h3,
+.font-exo h4,
+.font-exo .h4,
+.font-exo h5,
+.font-exo .h5,
+.font-exo h6,
+.font-exo .h6 {
     font-family: var(--heading-font-two);
 }
 
@@ -9550,32 +9639,51 @@ input:focus-visible {
     font-family: var(--heading-font-three);
 }
 
-.font-outfit h1, .font-outfit .h1, .font-outfit h2, .font-outfit .h2, .font-outfit h3, .font-outfit .h3, .font-outfit h4, .font-outfit .h4, .font-outfit h5, .font-outfit .h5, .font-outfit h6, .font-outfit .h6 {
+.font-outfit h1,
+.font-outfit .h1,
+.font-outfit h2,
+.font-outfit .h2,
+.font-outfit h3,
+.font-outfit .h3,
+.font-outfit h4,
+.font-outfit .h4,
+.font-outfit h5,
+.font-outfit .h5,
+.font-outfit h6,
+.font-outfit .h6 {
     font-family: var(--heading-font-three);
 }
 
 /* Home Two Css End */
 /* ================================= Banner Two Css Start ================================= */
 .banner-item-two {
-    padding: 186px clamp(2rem, -10.739rem + 17vw, 6.25rem) 186px;
+    /* padding: 186px clamp(2rem, -10.739rem + 17vw, 6.25rem) 186px; */
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 3rem;
 }
 
 @media screen and (max-width: 1199px) {
     .banner-item-two {
-        padding: 86px clamp(2rem, -10.739rem + 17vw, 6.25rem) 86px;
+        padding: 40px clamp(2rem, -10.739rem + 17vw, 6.25rem) 40px;
+        display: flex !important;
+        align-items: center;
     }
 }
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
     .banner-item-two {
-        padding: 60px clamp(2rem, -10.739rem + 17vw, 6.25rem) 60px;
+        display: flex !important;
+        flex-direction: column;
     }
-}
+} */
 
 @media screen and (max-width: 767px) {
     .banner-item-two {
         padding: 40px clamp(2rem, -10.739rem + 17vw, 6.25rem) 40px;
+        display: flex !important;
+        flex-direction: column;
     }
 }
 
@@ -9615,17 +9723,27 @@ input:focus-visible {
 .banner-item-two__thumb {
     inset-inline-end: clamp(1.5rem, -20.232rem + 29vw, 8.75rem);
     text-align: end;
-    max-width: 41%;
+    max-width: 35%;
 }
 
-@media screen and (max-width: 575px) {
+/* @media screen and (max-width: 575px) {
     .banner-item-two__thumb {
-        max-width: 50%;
+        max-width: 100%;
+        position: relative !important;
+        margin-top: 32px;
+        inset-inline-end: 0;
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    .banner-item-two__thumb {
+        max-width: 100%;
         position: relative !important;
         margin-top: 32px;
         inset-inline-end: 0;
     }
 }
+
 /* ================================= Banner Two Css End ================================= */
 /* Week Deals Start  */
 .deal-week-box__content {
@@ -9677,6 +9795,7 @@ input:focus-visible {
         flex-direction: column;
     }
 }
+
 /* ====================== Popular Products End ==================== */
 /*  */
 .day-sale-box__content {
@@ -9699,6 +9818,7 @@ input:focus-visible {
         flex-direction: column;
     }
 }
+
 /* ================================ Featured Products Css End ============================ */
 /* ============================= Banner Three Css Start ================================= */
 .banner-three {
@@ -9752,6 +9872,7 @@ input:focus-visible {
         transform: rotate(360deg);
     }
 }
+
 /* ============================= Banner Three Css End ================================= */
 /* ============================== Promotional Banner Three Start ==========================  */
 .promo-three-item {
@@ -9860,7 +9981,8 @@ input:focus-visible {
     transition: 0.2s linear;
 }
 
-.testimonials-thumbs:hover .testimonials-thumbs__img::before, .testimonials-thumbs:hover .testimonials-thumbs__content {
+.testimonials-thumbs:hover .testimonials-thumbs__img::before,
+.testimonials-thumbs:hover .testimonials-thumbs__content {
     visibility: visible !important;
     opacity: 1 !important;
 }
@@ -9888,17 +10010,19 @@ input:focus-visible {
         height: 630px !important;
     }
 }
+
 /* ================================= Testimonials Section Css End ==================================== */
 /* ============================ Product Details Css Start ============================= */
 .product-details__thumb-slider {
     padding: clamp(3rem, -2.173rem + 10.777vw, 7.25rem);
 }
 
-.product-details .slick-initialized.slick-slider .slick-slide > div > div {
+.product-details .slick-initialized.slick-slider .slick-slide>div>div {
     height: 100%;
 }
 
-.product-dContent__box, .product-dContent__header {
+.product-dContent__box,
+.product-dContent__header {
     padding: 16px 40px;
 }
 
@@ -9975,6 +10099,7 @@ input:focus-visible {
         border: 0 !important;
     }
 }
+
 /* ================================ Shop Page css End =============================== */
 /* ========================== Cart Page Css Start ============================ */
 .table-product__thumb {
@@ -10017,15 +10142,15 @@ input:focus-visible {
 }
 
 /* ========================= Blog Css End ============================= */
-.line-wrapper > div {
+.line-wrapper>div {
     position: relative;
 }
 
-.line-wrapper > div:last-child::before {
+.line-wrapper>div:last-child::before {
     display: none;
 }
 
-.line-wrapper > div::before {
+.line-wrapper>div::before {
     position: absolute;
     content: "";
     width: 1px;
@@ -10036,10 +10161,11 @@ input:focus-visible {
 }
 
 @media (max-width: 991px) {
-    .line-wrapper > div::before {
+    .line-wrapper>div::before {
         display: none;
     }
 }
+
 /* ======================== Vendors Two Page css Start ============================= */
 .grid-cols-3 {
     display: grid;
