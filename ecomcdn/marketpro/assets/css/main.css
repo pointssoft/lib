@@ -9371,6 +9371,12 @@ input:focus-visible {
     transform: scale(1.2);
 }
 
+@media screen and (max-width: 375px) {
+    .product-card {
+        padding: 1rem !important;
+    }
+}
+
 @media screen and (max-width: 1499px) {
     .product-card__cart {
         font-size: 12px;
@@ -9379,18 +9385,21 @@ input:focus-visible {
 }
 
 .product-card__badge {
-    border-radius: 16px 0 16px 0;
+    border-radius: 0px 0 16px 0;
 }
 
 .product-card__thumb {
     height: 232px;
     width: 100%;
     transition: 0s !important;
+    overflow: hidden !important;
 }
 
 .product-card__thumb img {
-    max-width: 160px;
-    width: 100%;
+    /* max-width: 160px; */
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
     transition: 0.2s linear;
 }
 
@@ -9420,9 +9429,9 @@ input:focus-visible {
         min-height: 160px;
     }
 
-    .product-card__thumb img {
+    /* .product-card__thumb img {
         max-width: 120px;
-    }
+    } */
 
     .product-card__content .product-card__price span {
         font-size: 0.75rem !important;
@@ -9749,6 +9758,16 @@ input:focus-visible {
 .deal-week-box__content {
     padding: clamp(1.5rem, -1.239rem + 5.705vw, 3.75rem) 0;
 }
+
+
+@media screen and (max-width: 375px) {
+    .deal-weak-product-container {
+        padding: 1.5rem 1rem !important;
+    }
+
+}
+
+
 
 /* Week Deals End  */
 /* ============================ trending products css Start =========================== */
