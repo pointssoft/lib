@@ -40,6 +40,11 @@
       opacity: 1;
       transform: translateX(0);
   } */
+
+
+  .product-card {
+    width: 280px !important;
+  }
 }
 
 
