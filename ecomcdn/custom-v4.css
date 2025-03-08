@@ -66,7 +66,7 @@
 }
 
 .product-card__thumb img {
-  /* max-width: 160px; */
+  max-width: 100% !important;
   object-fit: cover !important;
   width: 100% !important;
   height: 100% !important;

@@ -1318,7 +1318,9 @@
 
 function processExistingImages() {
     document.querySelectorAll(".product-card__thumb img").forEach((img) => {
-        img.crossOrigin = "anonymous";
+        if (!img.src.includes(window.location.origin)) {
+            img.crossOrigin = "anonymous";
+        }
         console.log(img);
         if (!img.complete) {
             img.onload = () => cropAndResizeImage(img);
